@@ -1,0 +1,57 @@
+:root{
+    --color-primary: #FA4932;
+    //before #EB2F64
+    --color-primary-light: #F54D3D;
+    //before #FF3366
+    --color-primary-dark: #E03B28;
+    //before  #BA265D
+
+    --color-light-grey-1: #faf9f9;
+    --color-light-grey-2: #f4f2f2;
+    --color-light-grey-3: #f0eeee;
+    --color-light-grey-4: #ccc;
+
+    --color-dark-grey-1: #333;
+    --color-dark-grey-2: #777;
+    --color-dark-grey-3: #999;
+}
+
+$bp-largest: 75em;
+$bp-large: 68.75em;
+$bp-medium: 56.25em;
+$bp-small: 37.5em;
+$bp-smallest: 31.25em;
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //1rem = 10px
+
+    @media only screen and (max-width: $bp-large){
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    // background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+    background-color: var(--color-primary-light);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    color: var(--color-dark-grey-2);
+
+    min-height: 100vh;
+}
